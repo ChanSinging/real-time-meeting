@@ -245,8 +245,6 @@ const Meeting: React.FC<Record<string, unknown>> = () => {
     const { type, userId } = params;
     let playUser = playStatus.current?.[userId] || {};
 
-    // console.log('pause', event);
-
     playUser = { ...playUser, [type]: false };
 
     const { audio, video } = playUser;
